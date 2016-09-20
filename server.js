@@ -5,11 +5,48 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var articleOne = {
+    title:'article One|Mayank Gera',
+    heading:'Arcticle One',
+    date:'sept,21',
+    content:   `
+        <p>
+            yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.
+        </p>
+        <p>
+            yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.
+        </p>  `
+};
+
+function createTemplate(data){
+var content = data.content;   
+var htmlTemplate= `
+<html>
+<head>
+    <title>Article ONE | MayankGera</title>
+    <meta name="viewport" content="width-device-width, initial-scale=1" />
+</head>    
+<body>
+    <div>
+        <a href="/">Home</a>
+    </div>
+    <div>
+        ${content}
+    </div>
+    
+</body>   
+</html>
+
+`;
+    return htmlTemplate;
+}
+
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
 app.get('/article-one',function(req,res){
-  res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
+  res.send(createTemplate(articleOne));
 });
 app.get('/article-two',function(req,res){
     res.sendFile(path.join(__dirname, 'ui', 'article-two.html'));
