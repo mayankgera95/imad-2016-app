@@ -11,7 +11,7 @@ var articleOne = {
     date:'sept,21',
     content:   `
         <p>
-            yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.
+            BCCCCCCCCCCCCCCCyo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.
         </p>
         <p>
             yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.yo aby ksauhd asjkdhsadkalsd jsadkjasdka.
