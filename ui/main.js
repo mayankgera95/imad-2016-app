@@ -18,15 +18,29 @@ img.onclick = function () {
 
 //button counter
 var button= document.getElementById('counter');
-var counter = 0;
+
 button.onclick = function(){
     
-    //make a req to counter endpoint
-    
+    //create req object
+    var request= new XMLhttpRequest();
     //capture response and store it in variable
+    request.onreadystatechange = function(){
+        if(request.readystate === XMLhttpRequest.DONE){
+            //take some action
+            if(request.status === 200){
+                var counter = request.responseText;
+                var span = document.getElementById('count');
+                span.innerHTML = counter.toString();
+                
+            }
+        }
+        //not done yet
+        
+    };
     
-    //render the variable in a span
-    counter = counter + 1;
-    var span = document.getElementById('count');
-    span.innerHTML = counter.toString();
+    //make the req
+    request.open('GET',"http://mayankgera95.imad.hasura-app.io/counter",true);
+    request.send(null);
+    
+    
 };
