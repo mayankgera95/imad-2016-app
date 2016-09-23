@@ -27,7 +27,7 @@ button.onclick = function(){
     //capture response and store it in variable
     
     //render the variable in a span
-    counter =counter+1;
+    counter = counter + 1;
     var span = document.getElementById('count');
     span.innerHTML = counter.toString();
 };
