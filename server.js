@@ -102,7 +102,7 @@ app.get('/submit-name/:name', function(req, res) {
     
     names.push(name);
     //JSON Javasript Object Notation
-    req.send(JSON.stringifynames);
+    res.send(JSON.stringifynames);
 })
 
 
