@@ -2,8 +2,7 @@ console.log('Loaded!');
 //alert
 
 //change text
-var element = document.getElementById('main-text');
-element.innerHTML='New Value';
+
 
 //move image
 var img = document.getElementById('madi');
